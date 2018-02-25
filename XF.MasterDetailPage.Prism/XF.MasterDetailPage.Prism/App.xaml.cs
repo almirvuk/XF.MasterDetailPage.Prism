@@ -20,7 +20,7 @@ namespace XF.MasterDetailPage.Prism {
 
         protected override void OnInitialized() {
 
-            NavigationService.NavigateAsync(nameof(MenuPage) + "/NavigationPage/" + nameof(ViewA));
+            NavigationService.NavigateAsync(nameof(MenuPage) + "/"+ nameof(NavigationPage) + "/" + nameof(ViewA));
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry) {

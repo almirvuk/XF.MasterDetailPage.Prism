@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using Xamarin.Forms;
 using XF.MasterDetailPage.Prism.Models;
 using XF.MasterDetailPage.Prism.Views;
 
@@ -48,9 +49,9 @@ namespace XF.MasterDetailPage.Prism.ViewModels
             NavigateCommand = new DelegateCommand(Navigate);
         }
 
-        private async void Navigate()
+        async void Navigate()
         {
-            await _navigationService.NavigateAsync("NavigationPage/" + SelectedMenuItem.PageName);
+            await _navigationService.NavigateAsync(nameof(NavigationPage) + "/" + SelectedMenuItem.PageName);
         }
     }
 }
