@@ -46,6 +46,13 @@ namespace XF.MasterDetailPage.Prism.ViewModels
                 Title = "View B"
             });
 
+            MenuItems.Add(new MyMenuItem()
+            {
+                Icon = "ic_viewb",
+                PageName = nameof(CustomViewPage),
+                Title = "Custom View"
+            });
+
             NavigateCommand = new DelegateCommand(Navigate);
         }
 

@@ -30,6 +30,7 @@ namespace XF.MasterDetailPage.Prism {
 
             containerRegistry.RegisterForNavigation<ViewA>();
             containerRegistry.RegisterForNavigation<ViewB>();
+            containerRegistry.RegisterForNavigation<CustomViewPage>();
         }
 
         protected override void OnStart() {
